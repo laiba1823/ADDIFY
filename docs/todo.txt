@@ -1,0 +1,248 @@
+Login
+    Company (Done)
+    Freelancer (Done)
+    Designing for both (Done)
+    Protection (Done)
+    Through social media
+
+Sign up
+    Company (Done)
+    Freelancer (Done)
+    Designing for both (Done)
+    Protection (Done)
+    Through social media
+
+ENTITIES:
+    Freelancer
+        id
+        name
+        img
+        email
+        password
+        about
+
+    Company
+        id
+        name
+        img
+        email
+        password
+        address
+
+    Transactions
+        id
+        number
+        from: company_id
+        to: freelancer_id
+        amount
+        status: paid, pending, cancelled
+
+    Admin
+        id
+        name
+        img
+        email
+        password
+    
+    bank_accounts
+        id
+        user_type: freelancer, company, admin
+        user_id
+        current_balance
+        card_holder
+        card_expiry
+        card_number
+        account_number
+    
+    Orders
+        id
+        number
+        freelancer_id
+        company_id
+        gig_id
+        amount
+        description
+        time
+        status: completed, pending, cancelled
+    
+    Gigs
+        id
+        freelancer_id
+        tile
+        description
+        category_id
+        price
+        images
+        uuid
+        status
+    
+    Category
+        id
+        name
+        slug
+        description
+        
+
+Freelancer Side
+    register (Done)
+    login (Done)
+    dashboard 
+        -greetings
+        -some analytics
+        -top rated gig
+    
+    Gigs 
+        -All gigs
+        -Preview gig
+        -Add gig
+        -Edit Gig
+        -Delete Gig
+
+    Finances
+        -transactions
+        -Withdraw
+
+
+Admin Side
+    login (Done)
+    
+    dashboard
+        -on the glance info 
+            -number of freelancers
+            -no of companies
+            -no of transactions made that day
+            -Total amount in bank
+    
+    settings 
+        -admin info 
+        -edit card info
+        -add admin
+
+    Freelancers 
+        -Table of all the freelancers
+        -Show freelancer's activity 
+            -how much he earned so far 
+            -how many orders done so far 
+            -freelancer info
+            -his gigs
+
+    Company
+        -Table of all the companies
+        -Show companies activity 
+            -Money spent by the company, 
+            -Orders done so far
+            -Company Info
+
+    finances
+        -Total amount of cash
+        -info about no of transactions happened that day 
+        -Deposit money 
+        -Withdraw Money
+    
+    Categories
+        -Dashboard
+        -Add Category
+        -Delete 
+        -Preview
+
+Public Side
+    -Main Landing Page
+        -Categories
+    -About Us
+    -Search Page
+    -Gigs Preview
+
+TODO:
+    -Front End of admin side
+        -Dashboard (Done)
+            -number of freelancers (Done)
+            -no of companies (Done)
+            -no of transactions made that day (Done)
+            -Total amount in bank (Done)
+            -Transactions made  that day (Done)
+    
+        -Finances (Done)
+            -Dashboard (Done)
+                -Total amount of cash in bank 
+                -Card info
+                -info about no of transactions happened that day 
+            -Deposit money (Done)
+            -Withdraw Money (Done)
+
+        -Settings 
+            -admin info (Done)
+            -edit card info (Done)
+            -add admin
+        
+        Freelancer Side
+            register (Done)
+            login (Done)
+            dashboard 
+                -greetings
+                -some analytics
+                -top rated gig
+            Gigs (Done)
+                -All gigs (Done)
+                -Preview gig (Done)
+                -Add gig (Done)
+                -Edit Gig (Done)
+                -Delete Gig (Done)
+            
+            Finances (Done)
+                -transactions
+                -Withdraw
+            
+        Public Side (Done)
+            -Main Landing Page
+                -Categories
+            -About Us
+            -Search Page
+            -Gigs Preview
+
+    -Backend of admin side
+        -Dashboard (Done)
+            -on the glance info 
+                -number of freelancers
+                -no of companies
+                -no of transactions made that day
+                -Total amount in bank
+    
+        -Settings 
+            -admin info
+            -edit card info 
+            -add admin
+
+        finances (Done)
+            -Total amount of cash
+            -info about no of transactions happened that day 
+            -Deposit money 
+            -Withdraw Money
+
+        Freelancer Side 
+            register (Done)
+            login (Done)
+            dashboard 
+                -greetings
+                -some analytics
+                    Total Gigs
+                    Bank Balance
+                Gigs table
+
+            Gigs (Done)
+                -All gigs (Done)
+                -Preview gig 
+                -Add gig (Done)
+                -Edit Gig (Done)
+                -Delete Gig (Done)
+                -Update status (Done) 
+
+        Public Side (Done)
+            -Main Landing Page
+                -Categories
+            -Search Page
+            -Gigs Preview
+    
+    -Front End of public side (Done) 
+    -sm integration
+    -update entities (Done)
+    -Order Placement
