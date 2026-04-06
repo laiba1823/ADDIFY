@@ -54,13 +54,7 @@
 								</div>
 							</fieldset>
 						</form>
-						<div class="wt-videoholder">
-							<div class="wt-videoshow">
-								<a data-rel="prettyPhoto[video]" href="https://youtu.be/byTY67GfxnQ?si=hBUiEza9Hjate3ge"><i class="fa fa-play"></i></a>
-							</div>
-							<div class="wt-videocontent">
-								<span>See For Yourself!<em>How it works </em></span>
-							</div>
+						
 						</div>
 					</div>
 				</div>
